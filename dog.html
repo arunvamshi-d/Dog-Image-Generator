@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+     
+<head>
+    <meta charset="utf-8">
+    <title>Random Dog</title>
+    <script src="dog.js"></script>
+    <style>
+        body{
+          background: linear-gradient(to right top, #ac1c6e, #aa4090, #a35cad, #9975c5, #8e8cd7, #809ee6, #73aff1, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+          display:flex;
+          justify-content:center;
+        }
+    
+        #container{
+          width:50%;
+          height:680px;
+          background-color:#400082;
+          border: 5px solid black;
+        }
+        #image{
+          width:100%;
+          height:500px;
+          border:5px solid #fff;
+          box-sizing: border-box;
+        }
+    
+        #button{
+          width:250px;
+          height:50px;
+          float:left;
+          margin-left:240px;
+          border:none;
+          outline:none;
+          border-radius: 10px;
+          cursor:pointer;
+          background-color:#fff;
+          color:#000;
+          border: 5px solid rgba(11, 73, 7, 0.585);
+          box-sizing: border-box;
+        }
+    
+      </style>   
+</head>
+  <body>
+    <div id="container">
+      <img id="image"/>
+      <button id="button" onclick="get_random_dog_image()"> Generate </button>
+    </div>
+  </body>
+
+</html>
